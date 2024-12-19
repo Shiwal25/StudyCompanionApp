@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".addTask"
+    android:padding="8dp"
+    android:background="#E6F0EF">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="@string/hello_blank_fragment" />-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Activity Name : "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_width= "match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Days : "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/monCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="MON"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/tueCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="TUE"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/wedCheck"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="WED"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/thuCheck"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="THU"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/friCheck"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="FRI"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/satCheck"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="SAT"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:id="@+id/sunCheck"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="SUN"
+                    android:gravity="center" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:text="Start Time : "
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/showStartTime"/>
+        <ImageButton
+            android:id="@+id/selectStartTime"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_down_24"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="End Time : "
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/showEndTime"/>
+        <ImageButton
+            android:id="@+id/selectEndTime"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_down_24"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:text="Save Task"
+        android:backgroundTint="#ff4f5b"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    
+</LinearLayout>
+</FrameLayout>

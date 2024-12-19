@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item android:id="@+id/logout"-->
+<!--        android:title="Logout" />-->
+    <item android:id="@+id/chat"
+        android:title="Chat History"
+        android:icon="@drawable/baseline_manage_history_24"/>
+
+<!--    <item android:id="@+id/timeTable"-->
+<!--        android:title="Timetable"-->
+<!--        android:icon="@drawable/baseline_view_timeline_24"/>-->
+
+    <item android:id="@+id/studySchedule"
+        android:title="Study Schedule"
+        android:icon="@drawable/baseline_schedule_24"/>
+
+    <item android:id="@+id/toDo"
+        android:title="To Do"
+        android:icon="@drawable/baseline_checklist_24"/>
+
+    <item android:id="@+id/timer"
+        android:title="Timer"
+        android:icon="@drawable/baseline_timelapse_24"/>
+
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/baseline_logout_24"/>
+<!--    <item android:id="@+id/settings"-->
+<!--        android:title="Settings"/>-->
+</menu>
