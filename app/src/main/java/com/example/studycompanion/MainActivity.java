@@ -114,8 +114,6 @@ public class MainActivity extends AppCompatActivity {
         apiKey = properties.getProperty("API_KEY");
         Log.d("agrawal", "onCreate: "+ apiKey);
 
-        //apiKey = "AIzaSyD4fYnKWaESh2CBYepQOOgjkT-Fh_JQ2GM";
-//        apiKey = BuildConfig.apiKey;
         drawerLayout = findViewById(R.id.main_drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
         View view1 = navigationView.getHeaderView(0);
